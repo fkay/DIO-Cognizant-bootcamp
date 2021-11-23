@@ -29,3 +29,6 @@ class MRDataMining(MRJob):
 
 if __name__ == '__main__':
     MRDataMining.run()
+
+
+#python3 dio-live-wordcount-test.py -r emr s3://dio-cognizant-datalake/data/sherlock.txt --output-dir=s3://dio-cognizant-datalake/output/logs1 --cloud-tmp-dir=s3://dio-cognizant-datalake/temp/

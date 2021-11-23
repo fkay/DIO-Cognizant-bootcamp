@@ -37,4 +37,7 @@ Neste repositório há os arquivos de configuração e execução de análise de
   * _nano ~/.mrjob.conf_
   * _python3 dio-live-wordcount-test.py -r emr s3://{your_s3_bucket_name}/data/SherlockHolmes.txt --output-dir=s3://{your_s3_bucket_name}/output/logs1 --cloud-tmp-dir=s3://{your_s3_bucket_name}/temp/_
 
+## Detalhes da execução:
 
+- deve ser criado o par de chaves correspondente na região que for utilizar o EMR
+- No inicio a quota de vCPU do serviço EC2 estava em 1 e não permitia instanciar o cluster, colocando apenas uma máquina de com 1 vCPU como master não passava da fase de configuração. Funcionou quando a AWS liberou a requisição para aumento da quota de vCPUs
